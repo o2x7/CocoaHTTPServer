@@ -432,14 +432,14 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 		}
 		// now we've got to be sure that the length of passed data since last line
 		// is multiplier of 4.
-		sizeToLeavePending = (length - i) & ~0x11; // size to leave pending = length-i - (length-i) %4;
+		sizeToLeavePending = (int) (length - i) & ~0x11; // size to leave pending = length-i - (length-i) %4;
 		return sizeToLeavePending;
 	}
 	
 	if( encoding == contentTransferEncoding_quotedPrintable ) {
 		// we don't pass more less then 3 bytes anyway.
 		if( length <= 2 ) 
-			return length;
+			return (int)length;
 		// check the last bytes to be start of encoded symbol.
 		const char* bytes = data.bytes + length - 2;
 		if( bytes[0] == '=' )

@@ -5866,21 +5866,21 @@ enum GCDAsyncSocketConfig
 			
 			NSNumber *value;
 			
-			value = [tlsSettings objectForKey:(NSString *)kCFStreamSSLAllowsAnyRoot];
-			if (value && [value boolValue] == YES)
-				canUseSecureTransport = NO;
-			
-			value = [tlsSettings objectForKey:(NSString *)kCFStreamSSLAllowsExpiredRoots];
-			if (value && [value boolValue] == YES)
-				canUseSecureTransport = NO;
+//			value = [tlsSettings objectForKey:(NSString *)kCFStreamSSLAllowsAnyRoot];
+//			if (value && [value boolValue] == YES)
+//				canUseSecureTransport = NO;
+//			
+//			value = [tlsSettings objectForKey:(NSString *)kCFStreamSSLAllowsExpiredRoots];
+//			if (value && [value boolValue] == YES)
+//				canUseSecureTransport = NO;
 			
 			value = [tlsSettings objectForKey:(NSString *)kCFStreamSSLValidatesCertificateChain];
 			if (value && [value boolValue] == NO)
 				canUseSecureTransport = NO;
 			
-			value = [tlsSettings objectForKey:(NSString *)kCFStreamSSLAllowsExpiredCertificates];
-			if (value && [value boolValue] == YES)
-				canUseSecureTransport = NO;
+//			value = [tlsSettings objectForKey:(NSString *)kCFStreamSSLAllowsExpiredCertificates];
+//			if (value && [value boolValue] == YES)
+//				canUseSecureTransport = NO;
 		}
 		#endif
 		
