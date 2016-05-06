@@ -1,11 +1,9 @@
 #import "ServerSentEventsExampleAppDelegate.h"
 #import "HTTPServer.h"
-#import "MyHTTPConnection.h"
 #import "DDLog.h"
 #import "DDTTYLogger.h"
-#import "SSEHTTPConnection.h"
 #import <Foundation/Foundation.h>
-#import "SSEConnectionManager.h"
+@import CocoaHTTPServer;
 
 // Log levels: off, error, warn, info, verbose
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;

@@ -7,7 +7,6 @@
 //
 
 #import "SSEHTTPConnection.h"
-#import "HTTPResponseTest.h"
 #import "SSEResponse.h"
 #import "SSEConnectionManager.h"
 
