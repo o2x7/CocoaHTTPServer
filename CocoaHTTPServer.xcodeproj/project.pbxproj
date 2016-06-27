@@ -79,8 +79,6 @@
 		98A65DEC1CDD0864005A6EF6 /* DispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A65DA21CDD0864005A6EF6 /* DispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98A65DED1CDD0864005A6EF6 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A65DA31CDD0864005A6EF6 /* DispatchQueueLogFormatter.m */; };
 		98A65DEE1CDD0864005A6EF6 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 98A65DA41CDD0864005A6EF6 /* README.txt */; };
-		98A65DF11CDD08F1005A6EF6 /* SSEConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A65DEF1CDD08F1005A6EF6 /* SSEConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98A65DF21CDD08F1005A6EF6 /* SSEConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A65DF01CDD08F1005A6EF6 /* SSEConnection.m */; };
 		98DF28FB1CDD077500F57578 /* CocoaHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 98DF28FA1CDD077500F57578 /* CocoaHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -177,8 +175,6 @@
 		98A65DA21CDD0864005A6EF6 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		98A65DA31CDD0864005A6EF6 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		98A65DA41CDD0864005A6EF6 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		98A65DEF1CDD08F1005A6EF6 /* SSEConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEConnection.h; sourceTree = "<group>"; };
-		98A65DF01CDD08F1005A6EF6 /* SSEConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSEConnection.m; sourceTree = "<group>"; };
 		98A65DF41CDD09F6005A6EF6 /* ServerSentEventsExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ServerSentEventsExample.xcodeproj; path = Samples/ServerSentEventsExample/ServerSentEventsExample.xcodeproj; sourceTree = SOURCE_ROOT; };
 		98DF28F71CDD077500F57578 /* CocoaHTTPServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaHTTPServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DF28FA1CDD077500F57578 /* CocoaHTTPServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaHTTPServer.h; sourceTree = "<group>"; };
@@ -293,8 +289,6 @@
 				98A65D7F1CDD0864005A6EF6 /* SSEHTTPConnection.m */,
 				98A65D801CDD0864005A6EF6 /* SSEResponse.h */,
 				98A65D811CDD0864005A6EF6 /* SSEResponse.m */,
-				98A65DEF1CDD08F1005A6EF6 /* SSEConnection.h */,
-				98A65DF01CDD08F1005A6EF6 /* SSEConnection.m */,
 			);
 			path = SSE;
 			sourceTree = "<group>";
@@ -423,7 +417,6 @@
 				98A65DB71CDD0864005A6EF6 /* MultipartMessageHeader.h in Headers */,
 				98A65DC31CDD0864005A6EF6 /* HTTPFileResponse.h in Headers */,
 				98A65DBF1CDD0864005A6EF6 /* HTTPDynamicFileResponse.h in Headers */,
-				98A65DF11CDD08F1005A6EF6 /* SSEConnection.h in Headers */,
 				98A65DD21CDD0864005A6EF6 /* WebSocket.h in Headers */,
 				98A65DB51CDD0864005A6EF6 /* MultipartFormDataParser.h in Headers */,
 				98A65DE81CDD0864005A6EF6 /* DDTTYLogger.h in Headers */,
@@ -571,7 +564,6 @@
 				98A65DC21CDD0864005A6EF6 /* HTTPErrorResponse.m in Sources */,
 				98A65DB81CDD0864005A6EF6 /* MultipartMessageHeader.m in Sources */,
 				98A65DEB1CDD0864005A6EF6 /* ContextFilterLogFormatter.m in Sources */,
-				98A65DF21CDD08F1005A6EF6 /* SSEConnection.m in Sources */,
 				98A65DCF1CDD0864005A6EF6 /* SSEHTTPConnection.m in Sources */,
 				98A65DB41CDD0864005A6EF6 /* HTTPServer.m in Sources */,
 				98A65DBA1CDD0864005A6EF6 /* MultipartMessageHeaderField.m in Sources */,
