@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F053E911D2194DA000F60FC /* HTTPResponseProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E841D2194DA000F60FC /* HTTPResponseProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F053E921D2194DA000F60FC /* HTTPResponseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F053E851D2194DA000F60FC /* HTTPResponseProxy.m */; };
+		8F053E931D2194DA000F60FC /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F053E861D2194DA000F60FC /* LICENSE.txt */; };
+		8F053E941D2194DA000F60FC /* Route.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E871D2194DA000F60FC /* Route.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F053E951D2194DA000F60FC /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F053E881D2194DA000F60FC /* Route.m */; };
+		8F053E961D2194DA000F60FC /* RouteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E891D2194DA000F60FC /* RouteRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F053E971D2194DA000F60FC /* RouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F053E8A1D2194DA000F60FC /* RouteRequest.m */; };
+		8F053E981D2194DA000F60FC /* RouteResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E8B1D2194DA000F60FC /* RouteResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F053E991D2194DA000F60FC /* RouteResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F053E8C1D2194DA000F60FC /* RouteResponse.m */; };
+		8F053E9A1D2194DA000F60FC /* RoutingConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E8D1D2194DA000F60FC /* RoutingConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F053E9B1D2194DA000F60FC /* RoutingConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F053E8E1D2194DA000F60FC /* RoutingConnection.m */; };
+		8F053E9C1D2194DA000F60FC /* RoutingHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E8F1D2194DA000F60FC /* RoutingHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F053E9D1D2194DA000F60FC /* RoutingHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F053E901D2194DA000F60FC /* RoutingHTTPServer.m */; };
 		98A65DA51CDD0864005A6EF6 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A65D521CDD0864005A6EF6 /* DDData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98A65DA61CDD0864005A6EF6 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A65D531CDD0864005A6EF6 /* DDData.m */; };
 		98A65DA71CDD0864005A6EF6 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A65D541CDD0864005A6EF6 /* DDNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -82,6 +95,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F053E841D2194DA000F60FC /* HTTPResponseProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPResponseProxy.h; path = RoutingHTTPServer/HTTPResponseProxy.h; sourceTree = "<group>"; };
+		8F053E851D2194DA000F60FC /* HTTPResponseProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPResponseProxy.m; path = RoutingHTTPServer/HTTPResponseProxy.m; sourceTree = "<group>"; };
+		8F053E861D2194DA000F60FC /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = RoutingHTTPServer/LICENSE.txt; sourceTree = "<group>"; };
+		8F053E871D2194DA000F60FC /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Route.h; path = RoutingHTTPServer/Route.h; sourceTree = "<group>"; };
+		8F053E881D2194DA000F60FC /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Route.m; path = RoutingHTTPServer/Route.m; sourceTree = "<group>"; };
+		8F053E891D2194DA000F60FC /* RouteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RouteRequest.h; path = RoutingHTTPServer/RouteRequest.h; sourceTree = "<group>"; };
+		8F053E8A1D2194DA000F60FC /* RouteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RouteRequest.m; path = RoutingHTTPServer/RouteRequest.m; sourceTree = "<group>"; };
+		8F053E8B1D2194DA000F60FC /* RouteResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RouteResponse.h; path = RoutingHTTPServer/RouteResponse.h; sourceTree = "<group>"; };
+		8F053E8C1D2194DA000F60FC /* RouteResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RouteResponse.m; path = RoutingHTTPServer/RouteResponse.m; sourceTree = "<group>"; };
+		8F053E8D1D2194DA000F60FC /* RoutingConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutingConnection.h; path = RoutingHTTPServer/RoutingConnection.h; sourceTree = "<group>"; };
+		8F053E8E1D2194DA000F60FC /* RoutingConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutingConnection.m; path = RoutingHTTPServer/RoutingConnection.m; sourceTree = "<group>"; };
+		8F053E8F1D2194DA000F60FC /* RoutingHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutingHTTPServer.h; path = RoutingHTTPServer/RoutingHTTPServer.h; sourceTree = "<group>"; };
+		8F053E901D2194DA000F60FC /* RoutingHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutingHTTPServer.m; path = RoutingHTTPServer/RoutingHTTPServer.m; sourceTree = "<group>"; };
 		98A65D521CDD0864005A6EF6 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
 		98A65D531CDD0864005A6EF6 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
 		98A65D541CDD0864005A6EF6 /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
@@ -170,6 +196,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F053E821D2194CB000F60FC /* RoutingHTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+				8F053E841D2194DA000F60FC /* HTTPResponseProxy.h */,
+				8F053E851D2194DA000F60FC /* HTTPResponseProxy.m */,
+				8F053E861D2194DA000F60FC /* LICENSE.txt */,
+				8F053E871D2194DA000F60FC /* Route.h */,
+				8F053E881D2194DA000F60FC /* Route.m */,
+				8F053E891D2194DA000F60FC /* RouteRequest.h */,
+				8F053E8A1D2194DA000F60FC /* RouteRequest.m */,
+				8F053E8B1D2194DA000F60FC /* RouteResponse.h */,
+				8F053E8C1D2194DA000F60FC /* RouteResponse.m */,
+				8F053E8D1D2194DA000F60FC /* RoutingConnection.h */,
+				8F053E8E1D2194DA000F60FC /* RoutingConnection.m */,
+				8F053E8F1D2194DA000F60FC /* RoutingHTTPServer.h */,
+				8F053E901D2194DA000F60FC /* RoutingHTTPServer.m */,
+			);
+			name = RoutingHTTPServer;
+			sourceTree = "<group>";
+		};
 		98A65D501CDD0864005A6EF6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +384,7 @@
 		98DF28ED1CDD077500F57578 = {
 			isa = PBXGroup;
 			children = (
+				8F053E821D2194CB000F60FC /* RoutingHTTPServer */,
 				98DF28F91CDD077500F57578 /* CocoaHTTPServer */,
 				98DF28F81CDD077500F57578 /* Products */,
 				98A65D501CDD0864005A6EF6 /* Core */,
@@ -396,6 +443,12 @@
 				98A65DA51CDD0864005A6EF6 /* DDData.h in Headers */,
 				98A65DEA1CDD0864005A6EF6 /* ContextFilterLogFormatter.h in Headers */,
 				98A65DA71CDD0864005A6EF6 /* DDNumber.h in Headers */,
+				8F053E911D2194DA000F60FC /* HTTPResponseProxy.h in Headers */,
+				8F053E961D2194DA000F60FC /* RouteRequest.h in Headers */,
+				8F053E941D2194DA000F60FC /* Route.h in Headers */,
+				8F053E981D2194DA000F60FC /* RouteResponse.h in Headers */,
+				8F053E9C1D2194DA000F60FC /* RoutingHTTPServer.h in Headers */,
+				8F053E9A1D2194DA000F60FC /* RoutingConnection.h in Headers */,
 				98A65DB21CDD0864005A6EF6 /* HTTPResponse.h in Headers */,
 				98DF28FB1CDD077500F57578 /* CocoaHTTPServer.h in Headers */,
 				98A65DAF1CDD0864005A6EF6 /* HTTPLogging.h in Headers */,
@@ -478,6 +531,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F053E931D2194DA000F60FC /* LICENSE.txt in Resources */,
 				98A65DEE1CDD0864005A6EF6 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +544,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				98A65DD11CDD0864005A6EF6 /* SSEResponse.m in Sources */,
+				8F053E971D2194DA000F60FC /* RouteRequest.m in Sources */,
+				8F053E921D2194DA000F60FC /* HTTPResponseProxy.m in Sources */,
+				8F053E951D2194DA000F60FC /* Route.m in Sources */,
 				98A65DAA1CDD0864005A6EF6 /* DDRange.m in Sources */,
 				98A65DB61CDD0864005A6EF6 /* MultipartFormDataParser.m in Sources */,
 				98A65DC61CDD0864005A6EF6 /* HTTPRedirectResponse.m in Sources */,
@@ -497,8 +554,10 @@
 				98A65DB11CDD0864005A6EF6 /* HTTPMessage.m in Sources */,
 				98A65DE11CDD0864005A6EF6 /* DDAbstractDatabaseLogger.m in Sources */,
 				98A65DD31CDD0864005A6EF6 /* WebSocket.m in Sources */,
+				8F053E9D1D2194DA000F60FC /* RoutingHTTPServer.m in Sources */,
 				98A65DE71CDD0864005A6EF6 /* DDLog.m in Sources */,
 				98A65DDE1CDD0864005A6EF6 /* GCDAsyncSocket.m in Sources */,
+				8F053E991D2194DA000F60FC /* RouteResponse.m in Sources */,
 				98A65DE91CDD0864005A6EF6 /* DDTTYLogger.m in Sources */,
 				98A65DE31CDD0864005A6EF6 /* DDASLLogger.m in Sources */,
 				98A65DC01CDD0864005A6EF6 /* HTTPDynamicFileResponse.m in Sources */,
@@ -517,6 +576,7 @@
 				98A65DB41CDD0864005A6EF6 /* HTTPServer.m in Sources */,
 				98A65DBA1CDD0864005A6EF6 /* MultipartMessageHeaderField.m in Sources */,
 				98A65DC41CDD0864005A6EF6 /* HTTPFileResponse.m in Sources */,
+				8F053E9B1D2194DA000F60FC /* RoutingConnection.m in Sources */,
 				98A65DAE1CDD0864005A6EF6 /* HTTPConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
