@@ -29,7 +29,7 @@
 }
 
 -(void)appendMessageWithid:(NSString*)identifier event:(NSString*)event data:(NSArray<NSString*>*)dataElements {
-    dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_sync(dispatch_get_main_queue(), ^{
         @synchronized(self) {
             if (identifier != nil) {
                 NSString* formatted = [NSString stringWithFormat:@"id: %@\n", identifier];
