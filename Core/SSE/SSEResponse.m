@@ -19,37 +19,38 @@
         _data = [NSMutableData new];
         _connection = connection;
         dispatch_async(dispatch_get_main_queue(), ^{
-//            _timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(onTimerTicked) userInfo:nil repeats:true];
+            //            _timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(onTimerTicked) userInfo:nil repeats:true];
             [_data appendData:[@"SSE Stream Open\n\n" dataUsingEncoding:NSUTF8StringEncoding]];
             [_connection responseHasAvailableData:self];
         });
-
+        
     }
     return self;
 }
 
 -(void)appendMessageWithid:(NSString*)identifier event:(NSString*)event data:(NSArray<NSString*>*)dataElements {
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        @synchronized(self) {
-            if (identifier != nil) {
-                NSString* formatted = [NSString stringWithFormat:@"id: %@\n", identifier];
-                [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
-            }
-            if (event != nil) {
-                NSString* formatted = [NSString stringWithFormat:@"event: %@\n", event];
-                [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
-            }
-            for (NSString* data in dataElements) {
-                NSString* formatted = [NSString stringWithFormat:@"data: %@\n", data];
-                [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
-            }
-            
-            if (identifier != nil || event != nil || dataElements.count > 0) {;
-                [_data appendData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
-                [_connection responseHasAvailableData:self];
-            }
-        }
-    });
+    
+    //    @synchronized(self) {
+    if (identifier != nil) {
+        NSString* formatted = [NSString stringWithFormat:@"id: %@\n", identifier];
+        [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    if (event != nil) {
+        NSString* formatted = [NSString stringWithFormat:@"event: %@\n", event];
+        [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    for (NSString* data in dataElements) {
+        NSString* formatted = [NSString stringWithFormat:@"data: %@\n", data];
+        [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    
+    if (identifier != nil || event != nil || dataElements.count > 0) {;
+        [_data appendData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [_connection responseHasAvailableData:self];
+        });
+    }
+    //    }
 }
 
 -(UInt64)contentLength {
