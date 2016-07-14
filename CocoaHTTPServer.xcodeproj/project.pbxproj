@@ -66,7 +66,7 @@
 		98A65DDE1CDD0864005A6EF6 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A65D921CDD0864005A6EF6 /* GCDAsyncSocket.m */; };
 		98A65DE01CDD0864005A6EF6 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A65D951CDD0864005A6EF6 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98A65DE11CDD0864005A6EF6 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A65D961CDD0864005A6EF6 /* DDAbstractDatabaseLogger.m */; };
-		98A65DE21CDD0864005A6EF6 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A65D971CDD0864005A6EF6 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98A65DE21CDD0864005A6EF6 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A65D971CDD0864005A6EF6 /* DDASLLogger.h */; };
 		98A65DE31CDD0864005A6EF6 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A65D981CDD0864005A6EF6 /* DDASLLogger.m */; };
 		98A65DE41CDD0864005A6EF6 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A65D991CDD0864005A6EF6 /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98A65DE51CDD0864005A6EF6 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A65D9A1CDD0864005A6EF6 /* DDFileLogger.m */; };
@@ -421,7 +421,6 @@
 				98A65DB51CDD0864005A6EF6 /* MultipartFormDataParser.h in Headers */,
 				98A65DE81CDD0864005A6EF6 /* DDTTYLogger.h in Headers */,
 				98A65DAB1CDD0864005A6EF6 /* HTTPAuthenticationRequest.h in Headers */,
-				98A65DE21CDD0864005A6EF6 /* DDASLLogger.h in Headers */,
 				98A65DDD1CDD0864005A6EF6 /* GCDAsyncSocket.h in Headers */,
 				98A65DB91CDD0864005A6EF6 /* MultipartMessageHeaderField.h in Headers */,
 				98A65DE41CDD0864005A6EF6 /* DDFileLogger.h in Headers */,
@@ -448,6 +447,7 @@
 				98A65DC11CDD0864005A6EF6 /* HTTPErrorResponse.h in Headers */,
 				98A65DBD1CDD0864005A6EF6 /* HTTPDataResponse.h in Headers */,
 				98A65DB31CDD0864005A6EF6 /* HTTPServer.h in Headers */,
+				98A65DE21CDD0864005A6EF6 /* DDASLLogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
