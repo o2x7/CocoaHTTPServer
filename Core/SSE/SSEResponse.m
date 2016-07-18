@@ -7,6 +7,7 @@
 //
 
 #import "SSEResponse.h"
+#import <Foundation/Foundation.h>
 
 @implementation SSEResponse {
     HTTPConnection* _connection;
@@ -18,11 +19,16 @@
     if (self) {
         _data = [NSMutableData new];
         _connection = connection;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            //            _timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(onTimerTicked) userInfo:nil repeats:true];
+        if (NSThread.isMainThread) {
             [_data appendData:[@"SSE Stream Open\n\n" dataUsingEncoding:NSUTF8StringEncoding]];
             [_connection responseHasAvailableData:self];
-        });
+        }
+        else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [_data appendData:[@"SSE Stream Open\n\n" dataUsingEncoding:NSUTF8StringEncoding]];
+                [_connection responseHasAvailableData:self];
+            });
+        }
         
     }
     return self;
@@ -46,9 +52,16 @@
     
     if (identifier != nil || event != nil || dataElements.count > 0) {;
         [_data appendData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
-        dispatch_async(dispatch_get_main_queue(), ^{
+        
+        if (NSThread.isMainThread) {
             [_connection responseHasAvailableData:self];
-        });
+        }
+        else {
+        
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [_connection responseHasAvailableData:self];
+            });
+        }
     }
     //    }
 }
