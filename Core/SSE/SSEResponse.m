@@ -36,34 +36,34 @@
 
 -(void)appendMessageWithid:(NSString*)identifier event:(NSString*)event data:(NSArray<NSString*>*)dataElements {
     
-    //    @synchronized(self) {
-    if (identifier != nil) {
-        NSString* formatted = [NSString stringWithFormat:@"id: %@\n", identifier];
-        [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
-    }
-    if (event != nil) {
-        NSString* formatted = [NSString stringWithFormat:@"event: %@\n", event];
-        [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
-    }
-    for (NSString* data in dataElements) {
-        NSString* formatted = [NSString stringWithFormat:@"data: %@\n", data];
-        [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
-    }
-    
-    if (identifier != nil || event != nil || dataElements.count > 0) {;
-        [_data appendData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
-        
-        if (NSThread.isMainThread) {
-            [_connection responseHasAvailableData:self];
+    @synchronized(self) {
+        if (identifier != nil) {
+            NSString* formatted = [NSString stringWithFormat:@"id: %@\n", identifier];
+            [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
         }
-        else {
+        if (event != nil) {
+            NSString* formatted = [NSString stringWithFormat:@"event: %@\n", event];
+            [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
+        }
+        for (NSString* data in dataElements) {
+            NSString* formatted = [NSString stringWithFormat:@"data: %@\n", data];
+            [_data appendData:[formatted dataUsingEncoding:NSUTF8StringEncoding]];
+        }
         
-            dispatch_async(dispatch_get_main_queue(), ^{
+        if (identifier != nil || event != nil || dataElements.count > 0) {;
+            [_data appendData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
+            
+            if (NSThread.isMainThread) {
                 [_connection responseHasAvailableData:self];
-            });
+            }
+            else {
+            
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [_connection responseHasAvailableData:self];
+                });
+            }
         }
     }
-    //    }
 }
 
 -(UInt64)contentLength {
