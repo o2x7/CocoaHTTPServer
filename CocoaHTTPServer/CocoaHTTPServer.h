@@ -26,7 +26,6 @@ FOUNDATION_EXPORT const unsigned char CocoaHTTPServerVersionString[];
 #import <CocoaHTTPServer/GCDAsyncSocket.h>
 #import <CocoaHTTPServer/RoutingHTTPServer.h>
 #import <CocoaHTTPServer/WebSocket.h>
-#import <CocoaHTTPServer/SSEConnection.h>
 #import <CocoaHTTPServer/MultipartMessageHeaderField.h>
 #import <CocoaHTTPServer/MultiPartMessageHeader.h>
 #import <CocoaHTTPServer/MultiPartFormDataParser.h>
