@@ -32,3 +32,10 @@ FOUNDATION_EXPORT const unsigned char CocoaHTTPServerVersionString[];
 #import <CocoaHTTPServer/HTTPRedirectResponse.h>
 #import <CocoaHTTPServer/HTTPMessage.h>
 #import <CocoaHTTPServer/HTTPLogging.h>
+
+#import <CocoaHTTPServer/HTTPAsyncFileResponse.h>
+#import <CocoaHTTPServer/HTTPAuthenticationRequest.h>
+#import <CocoaHTTPServer/HTTPDataResponse.h>
+#import <CocoaHTTPServer/HTTPDynamicFileResponse.h>
+#import <CocoaHTTPServer/HTTPErrorResponse.h>
+#import <CocoaHTTPServer/HTTPFileResponse.h>
