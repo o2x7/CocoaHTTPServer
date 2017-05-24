@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F053E911D2194DA000F60FC /* HTTPResponseProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E841D2194DA000F60FC /* HTTPResponseProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F053E911D2194DA000F60FC /* HTTPResponseProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E841D2194DA000F60FC /* HTTPResponseProxy.h */; };
 		8F053E921D2194DA000F60FC /* HTTPResponseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F053E851D2194DA000F60FC /* HTTPResponseProxy.m */; };
 		8F053E931D2194DA000F60FC /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F053E861D2194DA000F60FC /* LICENSE.txt */; };
 		8F053E941D2194DA000F60FC /* Route.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E871D2194DA000F60FC /* Route.h */; };
@@ -428,7 +428,6 @@
 				98A65DD01CDD0864005A6EF6 /* SSEResponse.h in Headers */,
 				98A65DC51CDD0864005A6EF6 /* HTTPRedirectResponse.h in Headers */,
 				98A65DCE1CDD0864005A6EF6 /* SSEHTTPConnection.h in Headers */,
-				8F053E911D2194DA000F60FC /* HTTPResponseProxy.h in Headers */,
 				8F053E961D2194DA000F60FC /* RouteRequest.h in Headers */,
 				8F053E981D2194DA000F60FC /* RouteResponse.h in Headers */,
 				8F053E9C1D2194DA000F60FC /* RoutingHTTPServer.h in Headers */,
@@ -440,6 +439,7 @@
 				98A65DB31CDD0864005A6EF6 /* HTTPServer.h in Headers */,
 				8F053E9A1D2194DA000F60FC /* RoutingConnection.h in Headers */,
 				8F053E941D2194DA000F60FC /* Route.h in Headers */,
+				8F053E911D2194DA000F60FC /* HTTPResponseProxy.h in Headers */,
 				98A65DEC1CDD0864005A6EF6 /* DispatchQueueLogFormatter.h in Headers */,
 				98A65DA91CDD0864005A6EF6 /* DDRange.h in Headers */,
 				98A65DA71CDD0864005A6EF6 /* DDNumber.h in Headers */,
