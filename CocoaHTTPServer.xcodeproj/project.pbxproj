@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F053E911D2194DA000F60FC /* HTTPResponseProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E841D2194DA000F60FC /* HTTPResponseProxy.h */; };
+		8F053E911D2194DA000F60FC /* HTTPResponseProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E841D2194DA000F60FC /* HTTPResponseProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F053E921D2194DA000F60FC /* HTTPResponseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F053E851D2194DA000F60FC /* HTTPResponseProxy.m */; };
 		8F053E931D2194DA000F60FC /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F053E861D2194DA000F60FC /* LICENSE.txt */; };
 		8F053E941D2194DA000F60FC /* Route.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F053E871D2194DA000F60FC /* Route.h */; };
